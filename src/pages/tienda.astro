@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const recipes = await getCollection("recipes");
+---
+
+<Layout title="Tienda">
+  <main>
+    <section class="">
+      <img
+        src="/public/img/main-section/banner.jpg"
+        alt="Banner principal de la pagina"
+      />
+    </section>
+
+    <section class="max-w-[70%] my-12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        recipes.map(async (recipe: { data: any }) => {
+          const { data } = recipe;
+          const { img, category, title, price } = data;
+
+          return (
+            <article class="gap-16 p-8 bg-white rounded-lg shadow-lg">
+              <div class="w-52 h-72 mx-auto overflow-hidden rounded-md">
+                <img
+                  src={`/public/img/store/${img}`}
+                  alt={title}
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h2 class="mt-4 text-xl font-semibold text-gray-800">{category} - {title}</h2>
+              <h4 class="mt-2 text-lg text-gray-600">${price}</h4>
+              <button
+                type="button"
+                class="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-transform transform hover:scale-105"
+              >
+                Agregar al carrito
+              </button>
+            </article>
+          );
+        })
+      }
+    </section>
+
+
+  </main>
+</Layout>
