@@ -1,4 +1,5 @@
 ---
+import MainImgRelative from "../components/MainImgRelative.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
@@ -15,10 +16,7 @@ let isLeftAligned = true;
 
 <Layout title="Nutricionista">
   <main>
-    <section>
-      <img src="/img/main-section/banner.jpg" alt="Banner principal de la pagina" />
-    </section>
-
+    <MainImgRelative imageSrc="/img/main-section/banner.jpg" alt="Banner Principal"/>
     <section class="flex flex-col items-center mt-20">
       {mainArticles.map(async (article: { data: any; }) => {
         const { data } = article;
