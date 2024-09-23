@@ -1,4 +1,5 @@
 ---
+import Cart from '../../public/img/icons/Cart.astro';
 ---
 
 <header class="p-4 shadow-md">
@@ -8,15 +9,31 @@
       Nutricionista
     </a>
 
-    <!-- Menú de navegación -->
     <nav>
-      <ul class="flex space-x-6 font-medium">
-        <li class="transition duration-300 hover:scale-110"><a href="/" class="text-green-600">Inicio</a></li>
-        <li class="transition duration-300 hover:scale-110"><a href="/sobre-mi" class="text-green-600">Sobre Mí</a></li>
-        <li class="transition duration-300 hover:scale-110"><a href="/tienda" class="text-green-600">Tienda</a></li>
-        <li class="transition duration-300 hover:scale-110"><a href="/consulta" class="text-green-600">Consultorio</a></li>
-        <li class="transition duration-300 hover:scale-110"><a href="/contacto" class="text-green-600">Contacto</a></li>
+      <ul class="flex space-x-8 font-medium mr-6">
+        <li class="transition duration-300 hover:scale-110">
+          <a href="/" class="text-green-600">Inicio</a>
+        </li>
+        <li class="transition duration-300 hover:scale-110">
+          <a href="/sobre-mi" class="text-green-600">Sobre Mí</a>
+        </li>
+        <li class="transition duration-300 hover:scale-110">
+          <a href="/tienda" class="text-green-600">Tienda</a>
+        </li>
+        <li class="transition duration-300 hover:scale-110">
+          <a href="/consulta" class="text-green-600">Consultorio</a>
+        </li>
+        <li class="transition duration-300 hover:scale-110">
+          <a href="/contacto" class="text-green-600">Contacto</a>
+        </li>
+        <li class="transition duration-300 hover:scale-110 relative">
+          <a href="/carrito" class="text-green-600 flex items-center">
+            <Cart />
+            <span class="absolute -top-2 -right-2 inline-flex items-center justify-center px-1 py-0.5 text-xs font-bold leading-none text-white bg-red-600 rounded-full">0</span>
+          </a>
+        </li>
       </ul>
     </nav>
+
   </div>
 </header>

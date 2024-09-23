@@ -23,7 +23,7 @@ export const prerender = true
 <Layout title={`${title}`}>
   <main class="max-w-[70%] flex my-12 justify-center mx-auto gap-24">
     <div class="flex-1 w-[340px] h-[480px] overflow-hidden flex justify-end items-center">
-      <img src={`/img/store/${img}`} alt={title} class="w-auto h-full object-cover">
+      <img transition:name={`img-store-${slug}`} src={`/img/store/${img}`} alt={title} class="w-auto h-full object-cover">
     </div>
     <div class="flex-1 prose">
       <h2 class="text-3xl mb-2">{category} - {title}</h2>
