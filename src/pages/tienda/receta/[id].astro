@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const recipes = await getCollection("recipes");
+
+  return recipes.map((recipe) => ({
+    params: { id: recipe.slug },
+    props: { recipe }
+  }))
+}
+
+const { recipe } = Astro.props;
+const { data, slug } = recipe;
+const { category, title, price, img } = data;
+
+const { Content } = await render(recipe);
+
+export const prerender = true
+---
+
+<Layout title={`${title}`}>
+  <main class="max-w-[70%] flex my-12 justify-center mx-auto gap-16">
+    <div class="w-[340px] h-[480px] overflow-hidden flex justify-center items-center">
+      <img src={`/img/store/${img}`} alt={title} class="w-auto h-full object-cover">
+    </div>
+    <div>
+      <h2 class="text-3xl mb-2">{category} - {title}</h2>
+      <p class="text-2xl mb-2"><strong>$</strong>{price.toFixed(2)}</p>
+      <Content />
+    </div>
+  </main>
+</Layout>
+

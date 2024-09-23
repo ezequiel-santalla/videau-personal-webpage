@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const name = 'Josefina Videau';
 
 import Header from "../components/Header.astro"
 import Turno from "../components/Turno.astro";
@@ -18,7 +19,7 @@ import Footer from "../components/Footer.astro";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/ico" href="img/foto-principal.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Josefina Videau - {title}</title>
+		<title>{name} - {title}</title>
 	</head>
 	<body>
 		<Header />
@@ -27,31 +28,3 @@ import Footer from "../components/Footer.astro";
 		<Footer />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #fff;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
