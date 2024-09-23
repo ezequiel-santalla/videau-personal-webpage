@@ -4,8 +4,8 @@ img: foto-principal.jpg
 order: 1
 ---
 
-Soy una **nutricionista graduada**, especializada en el cuidado integral de la salud y el bienestar. Además de mi carrera en nutrición, he completado los **cursos de antropometría ISAK I y II**, lo que me permite realizar evaluaciones corporales precisas para diseñar **planes personalizados** adaptados a las necesidades de cada persona.
+Mi nombre es Josefina Videau, soy licenciada en nutrición, graduada de la Universidad FASTA, Mar del Plata. Además, me especialicé en nutrición deportiva y soy antropometrista I.S.A.K II, lo que me permite realizar un perfil completo de la composición corporal de mis pacientes.
 
-También cuento con un **curso anual de Experto en Calidad**, lo que refuerza mi compromiso con la mejora continua en cada uno de mis servicios. Mi enfoque está orientado a ofrecer **soluciones nutricionales** basadas en evidencia científica, ayudando a mis pacientes a alcanzar sus **objetivos de forma saludable y sostenible**.
+Por otro lado, me gusta estar en constante aprendizaje, por lo que he incursionado en temas como la salud hormonal femenina, alimentación vegetariana y actualmente estoy realizando el Curso anual de Experto en Calidad de Alimentos, con el objetivo de integrar estos conocimientos en mis prácticas y de este modo ofrecer un enfoque integral.
 
-Para solicitar un **turno** conmigo mandame un mensaje de WhatsApp al **+54 9 223 6 210282**. A la brevedad me comunicaré para enviarte la información de las consultas y responder todas tus dudas.
+Para solicitar un turno conmigo podes comunicarte vía WhatsApp al +5492236210282. Estaré respondiendo a la brevedad todas tus consultas!

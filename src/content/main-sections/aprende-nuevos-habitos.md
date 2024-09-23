@@ -1,9 +1,11 @@
 ---
-title: Aprende nuevos Hábitos
+title: ¿Cómo trabajo?
 img: foto-principal.jpg
 order: 2
 ---
 
-¿Te sentis cansado/a de seguir **dietas** y notar que te alejas más de tus metas? ¡No te preocupes! Esto es algo que le pasa a mucha gente. Quiero invitarte a dejar atrás esas dietas y probar algo diferente: **¡cambiar tus hábitos!**
+Me enfoco en incorporar nuevos hábitos, pudiendo de esta forma cambiar, mejorar o incluir nuevas estrategias que permitan mejorar tu estado de salud.
 
-Olvídate de hacer ayunos, pasar hambre o renunciar a los alimentos que te gustan. La idea es **disfrutar** de la comida, pero con moderación. Se trata de aprender a **comer de todo**, pero sin exagerar. Así, podrás alcanzar tus objetivos sin sentirte privado y disfrutando del proceso. ¡Es posible!
+Se trata de un un enfoque en donde disfrutes del camino y en donde los cambios sean de forma paulatina y siempre trabajando un desafío a la vez, para que los cambios que realices se sostengan en el tiempo.
+
+En el caso de objetivos deportivos, se trabajara de la misma y además se añadirá estrategias y rutinas para los momentos de tus entrenamientos y competencias.
