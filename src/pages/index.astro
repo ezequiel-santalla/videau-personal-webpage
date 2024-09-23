@@ -4,7 +4,7 @@ import { getCollection, render } from "astro:content";
 
 const mainArticles = await getCollection("main-sections");
 
-mainArticles.sort((a, b) => {
+mainArticles.sort((a: { data: { order: number; }; }, b: { data: { order: number; }; }) => {
   const orderA = a.data.order || 0;
   const orderB = b.data.order || 0;
   return orderA - orderB;
