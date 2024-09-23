@@ -3,7 +3,7 @@ import { c as createComponent, r as renderTemplate, d as renderComponent, m as m
 import 'kleur/colors';
 import { $ as $$MainImgRelative } from '../chunks/MainImgRelative_BNcBtgoN.mjs';
 import { $ as $$Layout } from '../chunks/Layout_DA3M2vfV.mjs';
-import { g as getCollection } from '../chunks/_astro_content_hl5Zw4RI.mjs';
+import { g as getCollection } from '../chunks/_astro_content_C6g1usRo.mjs';
 /* empty css                                  */
 export { renderers } from '../renderers.mjs';
 

@@ -366,7 +366,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"main-sections":{"type":"content","entries":{"aprende-nuevos-habitos":"/src/content/main-sections/aprende-nuevos-habitos.md","quien-soy":"/src/content/main-sections/quien-soy.md","mejora-tu-composicion-corporal":"/src/content/main-sections/mejora-tu-composicion-corporal.md"}},"recipes":{"type":"content","entries":{"recetario-invierno":"/src/content/recipes/recetario-invierno.md","recetario-whey":"/src/content/recipes/recetario-whey.md","recetario-veggie":"/src/content/recipes/recetario-veggie.md","transforma-salud-digestiva":"/src/content/recipes/transforma-salud-digestiva.md"}}};
+lookupMap = {"main-sections":{"type":"content","entries":{"aprende-nuevos-habitos":"/src/content/main-sections/aprende-nuevos-habitos.md","mejora-tu-composicion-corporal":"/src/content/main-sections/mejora-tu-composicion-corporal.md","quien-soy":"/src/content/main-sections/quien-soy.md"}},"recipes":{"type":"content","entries":{"recetario-veggie":"/src/content/recipes/recetario-veggie.md","recetario-invierno":"/src/content/recipes/recetario-invierno.md","recetario-whey":"/src/content/recipes/recetario-whey.md","transforma-salud-digestiva":"/src/content/recipes/transforma-salud-digestiva.md"}}};
 
 new Set(Object.keys(lookupMap));
 
