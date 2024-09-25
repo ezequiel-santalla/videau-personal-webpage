@@ -1,28 +1,25 @@
 ---
-import MainImgRelative from "../components/MainImgRelative.astro";
+import MainImgRelative from "../components/astro/MainImgRelative.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
 const mainArticles = await getCollection("main-sections");
 
-mainArticles.sort((a: { data: { order: number; }; }, b: { data: { order: number; }; }) => {
-  const orderA = a.data.order || 0;
-  const orderB = b.data.order || 0;
-  return orderA - orderB;
-});
+const renderedArticles = await Promise.all(mainArticles.map(async (article) => {
+  const { Content } = await render(article);
+  return { ...article, Content };
+}));
 
 let isLeftAligned = true;
 ---
 
 <Layout title="Nutricionista">
   <main>
-    <MainImgRelative imageSrc="/img/main-section/banner.jpg" alt="Banner Principal"/>
+    <MainImgRelative imageSrc="/img/main-section/banner.jpg" alt="Banner Principal" />
     <section class="flex flex-col items-center mt-20">
-      {mainArticles.map(async (article: { data: any; }) => {
-        const { data } = article;
+      {renderedArticles.map((article) => {
+        const { data, Content } = article;
         const { title, img } = data;
-
-        const { Content } = await render(article);
 
         const articleClass = `flex max-w-[70%] mx-auto mb-16 items-start gap-16 ${isLeftAligned ? 'flex-row-reverse' : ''}`;
 
@@ -35,7 +32,7 @@ let isLeftAligned = true;
               <Content />
             </div>
 
-            <img src={`/img/main-section/${img}`} alt={title} class="w-80" />
+            <img src={`/img/main-section/${img}`} alt={`Imagen para ${title}`} class="md:w-80 w-full" />
           </article>
         );
       })}
