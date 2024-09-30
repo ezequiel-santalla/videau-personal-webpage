@@ -19,6 +19,13 @@ import Footer from "../components/Generics/Footer.astro";
 		<link rel="icon" type="image/ico" href="img/foto-principal.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Josefina Videau - {title}</title>
+
+		<!-- Open Graph -->
+		<meta property="og:title" content={`Josefina Videau - ${title}`} />
+		<meta property="og:description" content="Página Web Lic. en Nutricion Josefina Videau" />
+		<meta property="og:image" content="/img/main-section/foto-principal.jpg" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:type" content="website" />
 	</head>
 	<body>
 		<Header />
@@ -27,3 +34,4 @@ import Footer from "../components/Generics/Footer.astro";
 		<Footer />
 	</body>
 </html>
+
